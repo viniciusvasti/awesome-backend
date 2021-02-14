@@ -1,0 +1,31 @@
+@startuml
+
+start
+:User adds products to cart;
+:User chooses payment method;
+:User submits the order;
+:System checks availability of products;
+if (Products available?) then (yes)
+    :System processes payment;
+    if (Payment authorized?) then (yes)
+        fork
+            :System decreases
+            product inventory;
+        fork again
+            :System sends user an
+            order confirmation email;
+        fork again
+            :System triggers shipment;
+        end fork
+    else (no)
+        #pink::System informs user
+        about payment denial;
+    endif
+else (no)
+    #pink::System sends user
+    an apologizer email;
+endif
+
+stop
+
+@enduml

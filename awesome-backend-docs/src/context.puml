@@ -1,0 +1,19 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+LAYOUT_WITH_LEGEND()
+
+title Context of our Awesome Online Store
+
+Person(ecommCustomer, Customer, Customer of our online store)
+System_Ext(customerBroser, "Customer's Web Browser", "Either a desktop or mobile Web Browser")
+System_Ext(paymentBroker, "Third party Payment Broker", "Responsible for processing digital transfers in several forms like credit, debit, etc")
+System_Ext(shipmentCompany, "Third party Shipment Company", "Responsible for delivering goods from our store to our customers")
+System(awesomeOnlineStore, "Awesome Online Store", "An awesome online store, even better than Amazon or Alibaba")
+
+Rel(ecommCustomer, customerBroser, uses)
+Rel(customerBroser, awesomeOnlineStore, makes requests to, "HTTP")
+Rel(awesomeOnlineStore, paymentBroker, sends payments requests, "HTTP/Json")
+Rel(awesomeOnlineStore, shipmentCompany, sends delivering orders requests, "HTTP/Json")
+
+@enduml

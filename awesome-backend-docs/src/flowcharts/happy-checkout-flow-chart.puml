@@ -1,0 +1,14 @@
+@startuml
+
+start
+:User adds products to cart;
+:User chooses payment method;
+:User submits the order;
+:System checks products availability;
+:System processes payment;
+:System decreases product inventory;
+:System sends user an order confirmation email;
+:System triggers shipment;
+stop
+
+@enduml

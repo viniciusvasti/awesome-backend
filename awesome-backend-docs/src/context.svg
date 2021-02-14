@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="905px" preserveAspectRatio="none" style="width:480px;height:905px;" version="1.1" viewBox="0 0 480 905" width="480px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="339" x="64" y="16.708">Context of our Awesome Online Store</text><!--MD5=[96f4f28460fb57c3cc8f8676f1421eb4]
+entity ecommCustomer--><rect fill="#08427B" height="135.5156" style="stroke:#073B6F;stroke-width:1.5;" width="186" x="147.5" y="27.9531"/><image height="48" width="48" x="216.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACD0lEQVR4Xu2YoU4EMRCGT+4j8Ai8AhaH4QHgAUjQuFMECUgMIUgwJAgMhgQsAYUiJCiQIBBY+EITsjfTdme6V24v4c8vyGbb+ZjOtN0bNcvjQXmkH83WvYBWto6PLm6v7p7uH1/w2fXD+PBycX1Pv2l3IdDm/vn7x+dXQiAubRzoURa7gRZWd0iGRIiJbOnhnfYBQZNJjNbuyY2eJG8fkDE3bbG4ep6MHUAsgYxmE3nVs6VsBWJSGccsOlFPmLIViMzLOB7pCVO2AtHJMohH7Fh6zqitQK7m0rJvAVYgGcEpe//PLdDz65sM4pF9N7ICcXDKIB5Nv6j7tD0NoSdM2QrU9Gg0ewE1LqBhHR3BBdvj2vapnidjHxD/q6vd7Pvhr31AwcY8eXMTXAKECZZJFXuEq27aLgQK5uLMohCenGGuGewOxSjBvYBqeG6B+Nqiblggdjnc+ZXDy+FNFpFzw76O3UBAROuXh6FoiAcf5g9eTvUgzy0nWg6I8cXHRUpg5bOVBCo+KDpFajOf23GgPme7RSQ+lacIENUgJ6gg1k6HjgOlqnLqip4tEuhv0hNEMXUD0clyXE3p6pZA0S2nnvTlXwLJEZWlb7cTQH1+USgTN4VhAenm/wea1OCAOmqo6fE1WCb9WSKBah+rbUWPWAmE2Rvk0ApiB45eOyNAzU8xcTvj8KvkKEoOaIYeHNA3ZuygAvFMUO0AAAAASUVORK5CYII=" y="37.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="87" x="197" y="100.8047">Customer</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="242.5" y="117.5732"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="158" x="161.5" y="133.8701">Customer of our online</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="36" x="222.5" y="150.167">store</text><!--MD5=[9036141a236d84bf754769803df218cc]
+entity customerBroser--><rect fill="#999999" height="106.1406" style="stroke:#8A8A8A;stroke-width:1.5;" width="209" x="136" y="238.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="148" x="163.5" y="263.8047">Customer's Web</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="75" x="203" y="282.4297">Browser</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="242.5" y="299.1982"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="181" x="150" y="315.4951">Either a desktop or mobile</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="92" x="194.5" y="331.792">Web Browser</text><!--MD5=[68cbd328f2967cb04204fe1d12807847]
+entity paymentBroker--><rect fill="#999999" height="122.4375" style="stroke:#8A8A8A;stroke-width:1.5;" width="217" x="7" y="658.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="182" x="21.5" y="683.8047">Third party Payment</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="61" x="85" y="702.4297">Broker</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="117.5" y="719.1982"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="189" x="21" y="735.4951">Responsible for processing</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="174" x="26.5" y="751.792">digital transfers in several</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182" x="24.5" y="768.0889">forms like credit, debit, etc</text><!--MD5=[a7392d8f09a296a61e9e2d3281842071]
+entity shipmentCompany--><rect fill="#999999" height="122.4375" style="stroke:#8A8A8A;stroke-width:1.5;" width="215" x="259" y="658.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="187" x="270" y="683.8047">Third party Shipment</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="81" x="326" y="702.4297">Company</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="368.5" y="719.1982"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="178" x="277.5" y="735.4951">Responsible for delivering</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="191" x="269" y="751.792">goods from our store to our</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="74" x="329.5" y="768.0889">customers</text><!--MD5=[01062818a7ab739bbc46d44211430cad]
+entity awesomeOnlineStore--><rect fill="#1168BD" height="122.4375" style="stroke:#3C7FC0;stroke-width:1.5;" width="217" x="132" y="433.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="147" x="164" y="458.8047">Awesome Online</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="49" x="216" y="477.4297">Store</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="242.5" y="494.1982"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="179" x="151" y="510.4951">An awesome online store,</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="193" x="142" y="526.792">even better than Amazon or</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="216" y="543.0889">Alibaba</text><!--MD5=[63c84c7571332a2fa901872110f66cdf]
+link ecommCustomer to customerBroser--><path d="M240.5,163.9931 C240.5,185.6431 240.5,209.5131 240.5,230.6531 " fill="none" id="ecommCustomer-to-customerBroser" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="240.5,238.9131,243.5,230.9131,237.5,230.9131,240.5,238.9131" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="34" x="241.5" y="206.0918">uses</text><!--MD5=[7306561aa277a590105fbdaf539371c5]
+link customerBroser to awesomeOnlineStore--><path d="M240.5,344.9731 C240.5,369.5431 240.5,399.1831 240.5,425.5331 " fill="none" id="customerBroser-to-awesomeOnlineStore" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="240.5,433.5931,243.5,425.5931,237.5,425.5931,240.5,433.5931" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="133" x="241.5" y="387.0918">makes requests to</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="40" x="288" y="401.0605">[HTTP]</text><!--MD5=[f5371d3bf991a75baefaacfdb9cea4d0]
+link awesomeOnlineStore to paymentBroker--><path d="M206.84,556.0031 C190.3,585.5031 170.32,621.1531 153.26,651.5831 " fill="none" id="awesomeOnlineStore-to-paymentBroker" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="149.22,658.7931,155.7477,653.2805,150.5134,650.3476,149.22,658.7931" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="117" x="190.5" y="598.0918">sends payments</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="64" x="219" y="612.0605">requests</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="70" x="216" y="626.0293">[HTTP/Json]</text><!--MD5=[a85d77da14e329b2516c4e232235dd40]
+link awesomeOnlineStore to shipmentCompany--><path d="M299.65,556.1631 C307.3,565.6831 314.53,575.7631 320.5,585.9531 C332.21,605.9531 341.56,629.3831 348.69,650.9731 " fill="none" id="awesomeOnlineStore-to-shipmentCompany" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="351.21,658.8231,351.6082,650.2884,345.8981,652.131,351.21,658.8231" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="117" x="340.5" y="598.0918">sends delivering</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="115" x="343.5" y="612.0605">orders requests</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="70" x="366" y="626.0293">[HTTP/Json]</text><rect fill="#FFFFFF" height="95.4844" rx="5" ry="5" style="stroke:#FFFFFF;stroke-width:1.0;" width="129" x="329" y="794.3906"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="59" x="335" y="814.3857">Legend</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="398" y="814.3857"/><rect fill="#08427B" height="16.2969" style="stroke:none;stroke-width:1.0;" width="117" x="335" y="817.6875"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="339" y="830.6826">person</text><rect fill="#1168BD" height="16.2969" style="stroke:none;stroke-width:1.0;" width="117" x="335" y="833.9844"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="50" x="339" y="846.9795">system</text><rect fill="#686868" height="16.2969" style="stroke:none;stroke-width:1.0;" width="117" x="335" y="850.2813"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="108" x="339" y="863.2764">external person</text><rect fill="#999999" height="16.2969" style="stroke:none;stroke-width:1.0;" width="117" x="335" y="866.5781"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="109" x="339" y="879.5732">external system</text><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="335" x2="452" y1="801.3906" y2="801.3906"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="335" x2="452" y1="817.6875" y2="817.6875"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="335" x2="452" y1="833.9844" y2="833.9844"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="335" x2="452" y1="850.2813" y2="850.2813"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="335" x2="452" y1="866.5781" y2="866.5781"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="335" x2="452" y1="882.875" y2="882.875"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="335" x2="335" y1="801.3906" y2="882.875"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="452" x2="452" y1="801.3906" y2="882.875"/><!--MD5=[5d678fdc60af02bfe528329a66e882d2]
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+LAYOUT_WITH_LEGEND()
+
+title Context of our Awesome Online Store
+
+Person(ecommCustomer, Customer, Customer of our online store)
+System_Ext(customerBroser, "Customer's Web Browser", "Either a desktop or mobile Web Browser")
+System_Ext(paymentBroker, "Third party Payment Broker", "Responsible for processing digital transfers in several forms like credit, debit, etc")
+System_Ext(shipmentCompany, "Third party Shipment Company", "Responsible for delivering goods from our store to our customers")
+System(awesomeOnlineStore, "Awesome Online Store", "An awesome online store, even better than Amazon or Alibaba")
+
+Rel(ecommCustomer, customerBroser, uses)
+Rel(customerBroser, awesomeOnlineStore, makes requests to, "HTTP")
+Rel(awesomeOnlineStore, paymentBroker, sends payments requests, "HTTP/Json")
+Rel(awesomeOnlineStore, shipmentCompany, sends delivering orders requests, "HTTP/Json")
+
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam LegendBorderColor transparent
+skinparam LegendBackgroundColor transparent
+skinparam LegendFontColor #FFFFFF
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam queue {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam Arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 0
+    FontColor #444444
+    BorderColor #444444
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam database<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam queue<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam database<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam database<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam queue<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam database<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+
+
+sprite $person [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000025788300000000005886410000000000000
+000000000007DFFFFFFD9643347BFFFFFFFB400000000000
+0000000004EFFFFFFFFFFFFFFFFFFFFFFFFFFB1000000000
+000000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFD200000000
+00000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE10000000
+0000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB0000000
+000000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5000000
+000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD000000
+000009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF200000
+00000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF600000
+00000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF800000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00000EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF700000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+0000008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD3000000
+000000014555555555555555555555555555555300000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+hide stereotype
+legend right
+|<color:#000000>**Legend**</color> |
+|<#08427B> person |
+|<#1168BD> system|
+|<#686868> external person |
+|<#999999> external system |
+endlegend
+
+title Context of our Awesome Online Store
+
+rectangle "<$person>\n==Customer\n\n Customer of our online store" <<person>> as ecommCustomer
+rectangle "==Customer's Web Browser\n\n Either a desktop or mobile Web Browser" <<external_system>> as customerBroser
+rectangle "==Third party Payment Broker\n\n Responsible for processing digital transfers in several forms like credit, debit, etc" <<external_system>> as paymentBroker
+rectangle "==Third party Shipment Company\n\n Responsible for delivering goods from our store to our customers" <<external_system>> as shipmentCompany
+rectangle "==Awesome Online Store\n\n An awesome online store, even better than Amazon or Alibaba" <<system>> as awesomeOnlineStore
+
+ecommCustomer - ->> customerBroser : **uses**
+customerBroser - ->> awesomeOnlineStore : **makes requests to**\n//<size:12>[HTTP]</size>//
+awesomeOnlineStore - ->> paymentBroker : **sends payments requests**\n//<size:12>[HTTP/Json]</size>//
+awesomeOnlineStore - ->> shipmentCompany : **sends delivering orders requests**\n//<size:12>[HTTP/Json]</size>//
+
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 04:55:08 BRT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: Eclipse OpenJ9 VM
+Default Encoding: UTF-8
+Language: pt
+Country: BR
+--></g></svg>
