@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1656px" preserveAspectRatio="none" style="width:793px;height:1656px;" version="1.1" viewBox="0 0 793 1656" width="793px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="363" x="208.5125" y="16.708">Containers of our Awesome Online Store</text><!--MD5=[9e7bd9d08a506cac839ab36e4a2b3f52]
+cluster awesomeOnlineStore--><rect fill="#FFFFFF" height="852" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="778" x="9.025" y="427.9531"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="202" x="297.025" y="444.8047">Awesome Online Store</text><text fill="#444444" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="62" x="367.025" y="459.7168">[System]</text><!--MD5=[458b45fcb6f14011e4ad6148a76c5455]
+entity aosWebApp--><rect fill="#438DD5" height="101.4844" style="stroke:#3C7FC0;stroke-width:1.5;" width="198" x="302.025" y="486.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="80" x="361.025" y="511.8047">Web App</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="58" x="372.025" y="526.7168">[ReactJS]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="403.025" y="542.542"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="170" x="316.025" y="558.8389">Frontend responsible for</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="170" x="316.025" y="575.1357">the UI of the online store</text><!--MD5=[7868238d45fa5f8505593efd56e92222]
+entity aosApiGateway--><rect fill="#438DD5" height="117.7813" style="stroke:#3C7FC0;stroke-width:1.5;" width="219" x="291.525" y="685.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="113" x="344.525" y="710.8047">API Gateway</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="16" x="393.025" y="725.7168">[?]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="403.025" y="741.542"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="191" x="305.525" y="757.8389">API Gateway responsible for</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="165" x="316.525" y="774.1357">exposing microservices'</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="176" x="313.025" y="790.4326">Rest API's for the webapp</text><!--MD5=[361bae64de3093eed3b8c1914e7da2ba]
+entity aosInventoryMicroservice--><rect fill="#438DD5" height="136.4063" style="stroke:#3C7FC0;stroke-width:1.5;" width="217" x="41.525" y="1119.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="86" x="104.025" y="1144.8047">Inventory</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="113" x="93.525" y="1163.4297">Microservice</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="113" x="93.525" y="1178.3418">[Java/Spring Boot]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="152.025" y="1194.167"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="193" x="55.525" y="1210.4639">Microservice responsible for</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="138" x="79.025" y="1226.7607">handling the Store's</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="146" x="77.025" y="1243.0576">Inventory of products</text><!--MD5=[ed343ca75211520d299ff69b1aed0546]
+entity aosPaymentsMicroservice--><rect fill="#438DD5" height="120.1094" style="stroke:#3C7FC0;stroke-width:1.5;" width="217" x="545.525" y="1127.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="88" x="607.025" y="1152.8047">Payments</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="113" x="597.525" y="1171.4297">Microservice</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="113" x="597.525" y="1186.3418">[Java/Spring Boot]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="656.025" y="1202.167"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="193" x="559.525" y="1218.4639">Microservice responsible for</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="172" x="568.025" y="1234.7607">handling order payments</text><!--MD5=[ee2a7b1cc0afdab3dc4e6d817e3f9e5d]
+entity aosOrdersMicroservice--><rect fill="#438DD5" height="101.4844" style="stroke:#3C7FC0;stroke-width:1.5;" width="217" x="320.525" y="915.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="181" x="338.525" y="940.8047">Orders Microservice</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="113" x="372.525" y="955.7168">[Java/Spring Boot]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="431.025" y="971.542"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="193" x="334.525" y="987.8389">Microservice responsible for</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="353.525" y="1004.1357">handling users orders</text><!--MD5=[dbe060f1b43afad95955de7284376664]
+entity aosNotificationsMicroservice--><rect fill="#438DD5" height="136.4063" style="stroke:#3C7FC0;stroke-width:1.5;" width="217" x="545.525" y="676.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="111" x="595.525" y="701.8047">Notifications</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="113" x="597.525" y="720.4297">Microservice</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="113" x="597.525" y="735.3418">[Java/Spring Boot]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="656.025" y="751.167"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="193" x="559.525" y="767.4639">Microservice responsible for</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="181" x="561.525" y="783.7607">handling user notifications</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="112" x="598.025" y="800.0576">like email, sms...</text><!--MD5=[188ae5c243a58386b094bdf5ea3547dd]
+entity aosShipmentMicroservice--><rect fill="#438DD5" height="120.1094" style="stroke:#3C7FC0;stroke-width:1.5;" width="217" x="293.525" y="1127.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="93" x="352.525" y="1152.8047">Shipments</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="113" x="345.525" y="1171.4297">Microservice</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="113" x="345.525" y="1186.3418">[Java/Spring Boot]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="404.025" y="1202.167"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="193" x="307.525" y="1218.4639">Microservice responsible for</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="128" x="338.025" y="1234.7607">handling shipment</text><!--MD5=[92848cbaf65985a669855153c5362c37]
+entity customer--><rect fill="#08427B" height="135.5156" style="stroke:#073B6F;stroke-width:1.5;" width="186" x="434.025" y="27.9531"/><image height="48" width="48" x="503.025" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACD0lEQVR4Xu2YoU4EMRCGT+4j8Ai8AhaH4QHgAUjQuFMECUgMIUgwJAgMhgQsAYUiJCiQIBBY+EITsjfTdme6V24v4c8vyGbb+ZjOtN0bNcvjQXmkH83WvYBWto6PLm6v7p7uH1/w2fXD+PBycX1Pv2l3IdDm/vn7x+dXQiAubRzoURa7gRZWd0iGRIiJbOnhnfYBQZNJjNbuyY2eJG8fkDE3bbG4ep6MHUAsgYxmE3nVs6VsBWJSGccsOlFPmLIViMzLOB7pCVO2AtHJMohH7Fh6zqitQK7m0rJvAVYgGcEpe//PLdDz65sM4pF9N7ICcXDKIB5Nv6j7tD0NoSdM2QrU9Gg0ewE1LqBhHR3BBdvj2vapnidjHxD/q6vd7Pvhr31AwcY8eXMTXAKECZZJFXuEq27aLgQK5uLMohCenGGuGewOxSjBvYBqeG6B+Nqiblggdjnc+ZXDy+FNFpFzw76O3UBAROuXh6FoiAcf5g9eTvUgzy0nWg6I8cXHRUpg5bOVBCo+KDpFajOf23GgPme7RSQ+lacIENUgJ6gg1k6HjgOlqnLqip4tEuhv0hNEMXUD0clyXE3p6pZA0S2nnvTlXwLJEZWlb7cTQH1+USgTN4VhAenm/wea1OCAOmqo6fE1WCb9WSKBah+rbUWPWAmE2Rvk0ApiB45eOyNAzU8xcTvj8KvkKEoOaIYeHNA3ZuygAvFMUO0AAAAASUVORK5CYII=" y="37.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="87" x="483.525" y="100.8047">Customer</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="529.025" y="117.5732"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="158" x="448.025" y="133.8701">Customer of our online</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="36" x="509.025" y="150.167">store</text><!--MD5=[c5d00fc9bd651d13ad6e5016b5bdcf58]
+entity customerBrowser--><rect fill="#999999" height="106.1406" style="stroke:#8A8A8A;stroke-width:1.5;" width="209" x="296.525" y="238.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="148" x="324.025" y="263.8047">Customer's Web</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="75" x="363.525" y="282.4297">Browser</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="403.025" y="299.1982"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="181" x="310.525" y="315.4951">Either a desktop or mobile</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="92" x="355.025" y="331.792">Web Browser</text><!--MD5=[68cbd328f2967cb04204fe1d12807847]
+entity paymentBroker--><rect fill="#999999" height="122.4375" style="stroke:#8A8A8A;stroke-width:1.5;" width="217" x="545.525" y="1376.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="182" x="560.025" y="1401.8047">Third party Payment</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="61" x="623.525" y="1420.4297">Broker</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="656.025" y="1437.1982"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="189" x="559.525" y="1453.4951">Responsible for processing</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="174" x="565.025" y="1469.792">digital transfers in several</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182" x="563.025" y="1486.0889">forms like credit, debit, etc</text><!--MD5=[a7392d8f09a296a61e9e2d3281842071]
+entity shipmentCompany--><rect fill="#999999" height="122.4375" style="stroke:#8A8A8A;stroke-width:1.5;" width="215" x="294.525" y="1376.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="187" x="305.525" y="1401.8047">Third party Shipment</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="81" x="361.525" y="1420.4297">Company</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="404.025" y="1437.1982"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="178" x="313.025" y="1453.4951">Responsible for delivering</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="191" x="304.525" y="1469.792">goods from our store to our</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="74" x="365.025" y="1486.0889">customers</text><!--MD5=[4b7f0d460c899df88e4ddd356cf5ede1]
+link customerBrowser to awesomeOnlineStore--><!--MD5=[b64c9291745e6b6a71fa00adbb92e4c2]
+link customer to customerBrowser--><path d="M483.485,163.9931 C469.105,186.1231 453.235,210.5731 439.275,232.0531 " fill="none" id="customer-to-customerBrowser" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="434.825,238.9131,441.7014,233.8421,436.6715,230.571,434.825,238.9131" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="34" x="465.025" y="206.0918">uses</text><!--MD5=[edfa54ddde918ba9af9e8c987618b4cf]
+link customerBrowser to aosWebApp--><path d="M401.025,345.1931 C401.025,384.4131 401.025,438.1031 401.025,478.6231 " fill="none" id="customerBrowser-to-aosWebApp" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="401.025,486.7931,404.025,478.7931,398.025,478.7931,401.025,486.7931" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="133" x="402.025" y="387.0918">makes requests to</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="40" x="448.525" y="401.0605">[HTTP]</text><!--MD5=[c2d0611263f0763e0950d4db4186f28d]
+link aosWebApp to aosApiGateway--><path d="M401.025,588.2031 C401.025,615.1231 401.025,648.7431 401.025,677.8431 " fill="none" id="aosWebApp-to-aosApiGateway" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="401.025,685.9231,404.025,677.9231,398.025,677.9231,401.025,685.9231" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="133" x="402.025" y="630.0918">makes requests to</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="70" x="433.525" y="644.0605">[HTTP/Json]</text><!--MD5=[75cb72e504bf32bcbe8f9a4361c3fa35]
+link aosApiGateway to aosInventoryMicroservice--><path d="M291.515,798.3231 C245.215,826.4231 195.685,865.7331 168.025,915.9531 C135.125,975.6931 133.655,1054.4331 138.605,1111.6331 " fill="none" id="aosApiGateway-to-aosInventoryMicroservice" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="139.375,1119.9131,141.6184,1111.6689,135.6444,1112.2266,139.375,1119.9131" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="133" x="169.025" y="964.0918">makes requests to</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="70" x="200.525" y="978.0605">[HTTP/Json]</text><!--MD5=[6944d1323dffaf87d71ac1074a244d41]
+link aosApiGateway to aosPaymentsMicroservice--><path d="M509.955,803.9631 C533.015,818.0231 552.875,832.1131 561.025,842.9531 C622.705,924.9531 643.505,1045.0931 650.495,1119.5331 " fill="none" id="aosApiGateway-to-aosPaymentsMicroservice" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="651.245,1127.9331,653.519,1119.6973,647.543,1120.2328,651.245,1127.9331" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="133" x="634.025" y="964.0918">makes requests to</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="70" x="665.525" y="978.0605">[HTTP/Json]</text><!--MD5=[14abd8cff2a197f70a5a9d0426921ec7]
+link aosApiGateway to aosOrdersMicroservice--><path d="M408.455,804.2031 C412.545,836.2831 417.605,875.9531 421.685,907.9231 " fill="none" id="aosApiGateway-to-aosOrdersMicroservice" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="422.705,915.8731,424.6656,907.5571,418.7141,908.3185,422.705,915.8731" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="133" x="419.025" y="862.0918">makes requests to</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="70" x="450.525" y="876.0605">[HTTP/Json]</text><!--MD5=[e1e74e32f8e043d3b2c399fa124d3ea3]
+link aosPaymentsMicroservice to paymentBroker--><path d="M654.025,1248.0431 C654.025,1284.1331 654.025,1330.4531 654.025,1368.1931 " fill="none" id="aosPaymentsMicroservice-to-paymentBroker" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="654.025,1376.5931,657.025,1368.5931,651.025,1368.5931,654.025,1376.5931" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="117" x="655.025" y="1316.0918">sends payments</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="64" x="683.525" y="1330.0605">requests</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="70" x="680.525" y="1344.0293">[HTTP/Json]</text><!--MD5=[202a567c10b5a9cca2b49ef3e102521f]
+link aosOrdersMicroservice to aosPaymentsMicroservice--><path d="M462.335,1017.2631 C481.745,1045.5831 504.765,1077.7731 517.025,1089.9531 C528.575,1101.4231 541.605,1112.5131 554.925,1122.8231 " fill="none" id="aosOrdersMicroservice-to-aosPaymentsMicroservice" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="561.485,1127.8331,556.9495,1120.5923,553.3068,1125.36,561.485,1127.8331" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="88" x="518.025" y="1059.0918">sends async</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="72" x="528.025" y="1073.0605">messages</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="70" x="529.025" y="1087.0293">[HTTP/Json]</text><!--MD5=[bef6308fa6799c82f637c2f8645633c0]
+link aosOrdersMicroservice to aosInventoryMicroservice--><path d="M320.075,1009.2731 C288.895,1022.4831 259.875,1036.3831 247.025,1046.9531 C224.885,1065.1631 205.615,1089.6531 190.195,1113.0531 " fill="none" id="aosOrdersMicroservice-to-aosInventoryMicroservice" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="185.745,1119.9531,192.6088,1114.8651,187.5708,1111.6065,185.745,1119.9531" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="88" x="248.025" y="1059.0918">sends async</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="72" x="258.025" y="1073.0605">messages</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="70" x="259.025" y="1087.0293">[HTTP/Json]</text><!--MD5=[8164376b4bdd3ba3a118ea5028e2cceb]
+link aosOrdersMicroservice to aosShipmentMicroservice--><path d="M371.845,1017.2931 C364.585,1026.3831 358.225,1036.3731 354.025,1046.9531 C344.605,1070.6531 349.715,1097.0231 359.485,1120.4231 " fill="none" id="aosOrdersMicroservice-to-aosShipmentMicroservice" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="362.815,1127.9131,362.3011,1119.3846,356.82,1121.8254,362.815,1127.9131" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="117" x="355.025" y="1059.0918">sends delivering</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="115" x="358.025" y="1073.0605">orders requests</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="70" x="380.525" y="1087.0293">[HTTP/Json]</text><!--MD5=[0930c8006692d3532c75f875e101d4b3]
+link aosShipmentMicroservice to shipmentCompany--><path d="M402.025,1248.0431 C402.025,1284.1331 402.025,1330.4531 402.025,1368.1931 " fill="none" id="aosShipmentMicroservice-to-shipmentCompany" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="402.025,1376.5931,405.025,1368.5931,399.025,1368.5931,402.025,1376.5931" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="117" x="403.025" y="1316.0918">sends delivering</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="115" x="406.025" y="1330.0605">orders requests</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="70" x="428.525" y="1344.0293">[HTTP/Json]</text><!--MD5=[4d62fe52f32e6c926bd0a238a9f0a23e]
+reverse link aosNotificationsMicroservice to aosOrdersMicroservice--><path d="M613.365,820.2231 C598.745,842.9531 580.895,866.9431 561.025,885.9531 C549.715,896.7731 536.685,906.7931 523.305,915.8231 " fill="none" id="aosNotificationsMicroservice-backto-aosOrdersMicroservice" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="617.795,813.2231,610.9817,818.3786,616.0516,821.5874,617.795,813.2231" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="88" x="597.025" y="855.0918">sends async</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="72" x="607.025" y="869.0605">messages</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="70" x="608.025" y="883.0293">[HTTP/Json]</text><!--MD5=[18971c2dc4826d1b663e388df2534968]
+link aosNotificationsMicroservice to customer--><path d="M640.805,676.6231 C616.935,554.9831 566.775,299.4731 541.805,172.2531 " fill="none" id="aosNotificationsMicroservice-to-customer" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="540.195,164.0631,538.7956,172.4917,544.6828,171.3336,540.195,164.0631" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="112" x="587.025" y="387.0918">sends emails to</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="70" x="608.025" y="401.0605">[HTTP/Json]</text><rect fill="#FFFFFF" height="128.0781" rx="5" ry="5" style="stroke:#FFFFFF;stroke-width:1.0;" width="144" x="627.025" y="1512.3906"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="59" x="633.025" y="1532.3857">Legend</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="696.025" y="1532.3857"/><rect fill="#08427B" height="16.2969" style="stroke:none;stroke-width:1.0;" width="132" x="633.025" y="1535.6875"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="637.025" y="1548.6826">person</text><rect fill="#1168BD" height="16.2969" style="stroke:none;stroke-width:1.0;" width="132" x="633.025" y="1551.9844"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="50" x="637.025" y="1564.9795">system</text><rect fill="#438DD5" height="16.2969" style="stroke:none;stroke-width:1.0;" width="132" x="633.025" y="1568.2813"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="637.025" y="1581.2764">container</text><rect fill="#686868" height="16.2969" style="stroke:none;stroke-width:1.0;" width="132" x="633.025" y="1584.5781"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="108" x="637.025" y="1597.5732">external person</text><rect fill="#999999" height="16.2969" style="stroke:none;stroke-width:1.0;" width="132" x="633.025" y="1600.875"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="109" x="637.025" y="1613.8701">external system</text><rect fill="#B3B3B3" height="16.2969" style="stroke:none;stroke-width:1.0;" width="132" x="633.025" y="1617.1719"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="124" x="637.025" y="1630.167">external container</text><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="633.025" x2="765.025" y1="1519.3906" y2="1519.3906"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="633.025" x2="765.025" y1="1535.6875" y2="1535.6875"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="633.025" x2="765.025" y1="1551.9844" y2="1551.9844"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="633.025" x2="765.025" y1="1568.2813" y2="1568.2813"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="633.025" x2="765.025" y1="1584.5781" y2="1584.5781"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="633.025" x2="765.025" y1="1600.875" y2="1600.875"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="633.025" x2="765.025" y1="1617.1719" y2="1617.1719"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="633.025" x2="765.025" y1="1633.4688" y2="1633.4688"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="633.025" x2="633.025" y1="1519.3906" y2="1633.4688"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="765.025" x2="765.025" y1="1519.3906" y2="1633.4688"/><!--MD5=[5b0103a74266373b02cbbabcb325815e]
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+LAYOUT_WITH_LEGEND()
+
+title Containers of our Awesome Online Store
+
+Person(customer, Customer, Customer of our online store)
+System_Ext(customerBrowser, "Customer's Web Browser", "Either a desktop or mobile Web Browser")
+System_Ext(paymentBroker, "Third party Payment Broker", "Responsible for processing digital transfers in several forms like credit, debit, etc")
+System_Ext(shipmentCompany, "Third party Shipment Company", "Responsible for delivering goods from our store to our customers")
+System_Boundary(awesomeOnlineStore, "Awesome Online Store") {
+    Container(aosWebApp, "Web App", ReactJS, "Frontend responsible for the UI of the online store")
+    Container(aosApiGateway, "API Gateway", "?", "API Gateway responsible for exposing microservices' Rest API's for the webapp")
+    Container(aosInventoryMicroservice, "Inventory Microservice", "Java/Spring Boot", "Microservice responsible for handling the Store's Inventory of products")
+    Container(aosPaymentsMicroservice, "Payments Microservice", "Java/Spring Boot", "Microservice responsible for handling order payments")
+    Container(aosOrdersMicroservice, "Orders Microservice", "Java/Spring Boot", "Microservice responsible for handling users orders")
+    Container(aosNotificationsMicroservice, "Notifications Microservice", "Java/Spring Boot", "Microservice responsible for handling user notifications like email, sms...")
+    Container(aosShipmentMicroservice, "Shipments Microservice", "Java/Spring Boot", "Microservice responsible for handling shipment")
+}
+
+Lay_D(customerBrowser, awesomeOnlineStore)
+
+Rel(customer, customerBrowser, uses)
+Rel(customerBrowser, aosWebApp, makes requests to, "HTTP")
+Rel(aosWebApp, aosApiGateway, makes requests to, "HTTP/Json")
+Rel(aosApiGateway, aosInventoryMicroservice, makes requests to, "HTTP/Json")
+Rel(aosApiGateway, aosPaymentsMicroservice, makes requests to, "HTTP/Json")
+Rel(aosApiGateway, aosOrdersMicroservice, makes requests to, "HTTP/Json")
+Rel(aosPaymentsMicroservice, paymentBroker, sends payments requests, "HTTP/Json")
+Rel(aosOrdersMicroservice, aosPaymentsMicroservice, sends async messages, "HTTP/Json")
+Rel(aosOrdersMicroservice, aosInventoryMicroservice, sends async messages, "HTTP/Json")
+Rel(aosOrdersMicroservice, aosShipmentMicroservice, sends delivering orders requests, "HTTP/Json")
+Rel(aosShipmentMicroservice, shipmentCompany, sends delivering orders requests, "HTTP/Json")
+Rel_U(aosOrdersMicroservice, aosNotificationsMicroservice, sends async messages, "HTTP/Json")
+Rel(aosNotificationsMicroservice, customer, sends emails to, "HTTP/Json")
+
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam LegendBorderColor transparent
+skinparam LegendBackgroundColor transparent
+skinparam LegendFontColor #FFFFFF
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam queue {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam Arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 0
+    FontColor #444444
+    BorderColor #444444
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam database<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam queue<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam database<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam database<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam queue<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam database<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+
+
+sprite $person [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000025788300000000005886410000000000000
+000000000007DFFFFFFD9643347BFFFFFFFB400000000000
+0000000004EFFFFFFFFFFFFFFFFFFFFFFFFFFB1000000000
+000000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFD200000000
+00000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE10000000
+0000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB0000000
+000000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5000000
+000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD000000
+000009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF200000
+00000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF600000
+00000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF800000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00000EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF700000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+0000008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD3000000
+000000014555555555555555555555555555555300000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam database<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam queue<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+skinparam rectangle<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam database<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam queue<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+hide stereotype
+legend right
+|<color:#000000>**Legend**</color> |
+|<#08427B> person |
+|<#1168BD> system |
+|<#438DD5> container |
+|<#686868> external person |
+|<#999999> external system |
+|<#B3B3B3> external container |
+endlegend
+
+title Containers of our Awesome Online Store
+
+rectangle "<$person>\n==Customer\n\n Customer of our online store" <<person>> as customer
+rectangle "==Customer's Web Browser\n\n Either a desktop or mobile Web Browser" <<external_system>> as customerBrowser
+rectangle "==Third party Payment Broker\n\n Responsible for processing digital transfers in several forms like credit, debit, etc" <<external_system>> as paymentBroker
+rectangle "==Third party Shipment Company\n\n Responsible for delivering goods from our store to our customers" <<external_system>> as shipmentCompany
+rectangle "==Awesome Online Store\n<size:12>[System]</size>" <<boundary>> as awesomeOnlineStore {
+    rectangle "==Web App\n//<size:12>[ReactJS]</size>//\n\n Frontend responsible for the UI of the online store" <<container>> as aosWebApp
+    rectangle "==API Gateway\n//<size:12>[?]</size>//\n\n API Gateway responsible for exposing microservices' Rest API's for the webapp" <<container>> as aosApiGateway
+    rectangle "==Inventory Microservice\n//<size:12>[Java/Spring Boot]</size>//\n\n Microservice responsible for handling the Store's Inventory of products" <<container>> as aosInventoryMicroservice
+    rectangle "==Payments Microservice\n//<size:12>[Java/Spring Boot]</size>//\n\n Microservice responsible for handling order payments" <<container>> as aosPaymentsMicroservice
+    rectangle "==Orders Microservice\n//<size:12>[Java/Spring Boot]</size>//\n\n Microservice responsible for handling users orders" <<container>> as aosOrdersMicroservice
+    rectangle "==Notifications Microservice\n//<size:12>[Java/Spring Boot]</size>//\n\n Microservice responsible for handling user notifications like email, sms..." <<container>> as aosNotificationsMicroservice
+    rectangle "==Shipments Microservice\n//<size:12>[Java/Spring Boot]</size>//\n\n Microservice responsible for handling shipment" <<container>> as aosShipmentMicroservice
+}
+
+customerBrowser -[hidden]D- awesomeOnlineStore
+
+customer - ->> customerBrowser : **uses**
+customerBrowser - ->> aosWebApp : **makes requests to**\n//<size:12>[HTTP]</size>//
+aosWebApp - ->> aosApiGateway : **makes requests to**\n//<size:12>[HTTP/Json]</size>//
+aosApiGateway - ->> aosInventoryMicroservice : **makes requests to**\n//<size:12>[HTTP/Json]</size>//
+aosApiGateway - ->> aosPaymentsMicroservice : **makes requests to**\n//<size:12>[HTTP/Json]</size>//
+aosApiGateway - ->> aosOrdersMicroservice : **makes requests to**\n//<size:12>[HTTP/Json]</size>//
+aosPaymentsMicroservice - ->> paymentBroker : **sends payments requests**\n//<size:12>[HTTP/Json]</size>//
+aosOrdersMicroservice - ->> aosPaymentsMicroservice : **sends async messages**\n//<size:12>[HTTP/Json]</size>//
+aosOrdersMicroservice - ->> aosInventoryMicroservice : **sends async messages**\n//<size:12>[HTTP/Json]</size>//
+aosOrdersMicroservice - ->> aosShipmentMicroservice : **sends delivering orders requests**\n//<size:12>[HTTP/Json]</size>//
+aosShipmentMicroservice - ->> shipmentCompany : **sends delivering orders requests**\n//<size:12>[HTTP/Json]</size>//
+aosOrdersMicroservice -UP->> aosNotificationsMicroservice : **sends async messages**\n//<size:12>[HTTP/Json]</size>//
+aosNotificationsMicroservice - ->> customer : **sends emails to**\n//<size:12>[HTTP/Json]</size>//
+
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 04:55:08 BRT 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: Eclipse OpenJ9 VM
+Default Encoding: UTF-8
+Language: pt
+Country: BR
+--></g></svg>
