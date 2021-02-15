@@ -33,6 +33,6 @@ Rel(aosOrdersMicroservice, aosInventoryMicroservice, sends async messages/events
 Rel(aosOrdersMicroservice, aosShipmentMicroservice, sends async events, "HTTP/Json")
 Rel(aosShipmentMicroservice, shipmentCompany, sends delivering orders requests, "HTTP/Json")
 Rel_U(aosOrdersMicroservice, aosNotificationsMicroservice, sends async messages, "HTTP/Json")
-Rel(aosNotificationsMicroservice, customer, sends emails to, "HTTP/Json")
+Rel(aosNotificationsMicroservice, customer, sends emails to, "smtp/pop3")
 
 @enduml
