@@ -10,7 +10,7 @@ if (Products available?) then (yes)
     if (Payment authorized?) then (yes)
         fork
             :System decreases
-            product inventory;
+            product stock;
         fork again
             :System sends user an
             order confirmation email;

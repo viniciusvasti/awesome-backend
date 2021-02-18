@@ -6,7 +6,7 @@ start
 :User submits the order;
 :System checks products availability;
 :System processes payment;
-:System decreases product inventory;
+:System decreases product stock;
 :System sends user an order confirmation email;
 :System triggers shipment;
 stop
