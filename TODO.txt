@@ -1,0 +1,22 @@
+(   ) Criar Microserviços em Java
+(   ) Criar BD Mongo
+(   ) Implementar Hateoas
+(   ) Implementar Paginação
+(   ) Refatorar Java 8 a 15
+(   ) Containerizar serviço e BD
+(   ) Converter para programação Reativa
+(   ) Escrever um dos MS em Kotlin 
+(   ) Escrever um dos MS em NodeJS 
+(   ) Escrever um dos MS em Elixir 
+(   ) Escrever um dos MS em Golang 
+(   ) Escrever um dos MS em Scala 
+(   ) Realizar testes de carga 
+(   ) Monitorar mensagens com Kiali
+(   ) Logs com ELK
+(   ) Descobrir onde se aplica Grafana
+(   ) Aplicar CQRS
+(   ) Aplicar event sourcing
+(   ) Containerizar
+(   ) Orquestrar com K8S
+(   ) Refatorar microserviços para Clean Architecture
+(   ) Prometheus
