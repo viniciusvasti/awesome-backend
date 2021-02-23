@@ -5,6 +5,7 @@ import com.vas.aos.core.component.orders.application.dtos.CreatedOrderDTO;
 import com.vas.aos.core.component.orders.application.dtos.PaymentDTO;
 import com.vas.aos.core.component.orders.application.dtos.ProductDTO;
 import com.vas.aos.core.component.orders.application.exceptions.InvalidOrderRequestException;
+import com.vas.aos.core.component.orders.application.pubsub.OrderReceivedPublisher;
 import com.vas.aos.core.component.orders.application.repository.OrderRequestRepository;
 import com.vas.aos.core.component.orders.domain.OrderFactory;
 import com.vas.aos.core.component.orders.domain.OrderFactoryImpl;
@@ -26,6 +27,7 @@ public class OrderRequestServiceImplTest {
 
     @Mock
     private OrderRequestRepository orderRequestRepository;
+    private OrderReceivedPublisher orderReceivedPublisher;
     private OrderFactory orderFactory;
     private OrderRequestService orderRequestService;
 
@@ -33,7 +35,7 @@ public class OrderRequestServiceImplTest {
     void initService() {
         orderFactory = new OrderFactoryImpl();
         orderRequestService =
-                new OrderRequestServiceImpl(orderRequestRepository, orderFactory);
+                new OrderRequestServiceImpl(orderRequestRepository, orderFactory, orderReceivedPublisher);
     }
 
     @Test

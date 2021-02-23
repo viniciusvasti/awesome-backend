@@ -3,9 +3,11 @@ package com.vas.aos.core.component.orders.application.service;
 import com.vas.aos.core.component.orders.application.dtos.CreateOrderDTO;
 import com.vas.aos.core.component.orders.application.dtos.CreatedOrderDTO;
 import com.vas.aos.core.component.orders.application.exceptions.InvalidOrderRequestException;
+import com.vas.aos.core.component.orders.application.pubsub.OrderReceivedPublisher;
+import com.vas.aos.core.component.orders.application.dtos.event.OrderReceivedEventDTO;
 import com.vas.aos.core.component.orders.application.repository.OrderRequestRepository;
-import com.vas.aos.core.component.orders.domain.entities.Order;
 import com.vas.aos.core.component.orders.domain.OrderFactory;
+import com.vas.aos.core.component.orders.domain.entities.Order;
 import com.vas.aos.core.component.orders.domain.entities.Payment;
 import com.vas.aos.core.component.orders.domain.entities.Product;
 import lombok.AllArgsConstructor;
@@ -18,7 +20,9 @@ public class OrderRequestServiceImpl implements OrderRequestService {
 
     final OrderRequestRepository orderRequestRepository;
     final OrderFactory orderFactory;
+    final OrderReceivedPublisher orderReceivedPublisher;
 
+    // TODO create utility class for mapping objects
     @Override
     public CreatedOrderDTO create(CreateOrderDTO createOrderDTO) {
         List<Product> products = createOrderDTO.products().stream()
@@ -35,6 +39,16 @@ public class OrderRequestServiceImpl implements OrderRequestService {
         validateOrder(order, products);
         orderRequestRepository.save(order);
         CreatedOrderDTO orderCreated = new CreatedOrderDTO(order.getId());
+        // TODO use Spring Events for publishing event messages
+        orderReceivedPublisher.publish(OrderReceivedEventDTO.builder()
+                .id(order.getId())
+                .customerName(order.getCustomerName())
+                .payment(new OrderReceivedEventDTO.Payment(order.getPayment().getPaymentMethod()))
+                .products(
+                        order.getProducts().stream().map(
+                                p -> new OrderReceivedEventDTO.Product(p.getSku(), p.getName(), p.getPrice())
+                        ).collect(Collectors.toList()))
+                .build());
         return orderCreated;
     }
 

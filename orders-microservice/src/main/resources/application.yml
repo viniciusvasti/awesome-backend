@@ -12,3 +12,7 @@ spring:
     hibernate:
       ddl-auto: create-drop
     show-sql: true
+  kafka:
+    topic:
+      new-order-received: order.new-order-received
+    bootstrap-servers: localhost:9092
