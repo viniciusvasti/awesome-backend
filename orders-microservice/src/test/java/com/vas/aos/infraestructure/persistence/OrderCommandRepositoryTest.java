@@ -23,29 +23,31 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
 @ExtendWith(MockitoExtension.class)
-public class OrderRepositoryTest {
+public class OrderCommandRepositoryTest {
 
     @Mock
     private OrderMySQLRepository orderMySQLRepository;
-    private OrderRepository orderRepository;
+    private OrderCommandRepository orderCommandRepository;
 
     @BeforeEach
     void initService() {
-        orderRepository = new OrderRepository(orderMySQLRepository);
+        orderCommandRepository = new OrderCommandRepository(orderMySQLRepository);
     }
 
     @Test
     void givenCreateOrder_whenSaving_thenReturnCreatedOrder() {
         var id = UUID.randomUUID();
-        Order order = new Order(id, "Vinicius", new Payment(PaymentMethod.CREDIT));
+        Order order = new Order(id, "Vinicius", new Payment(PaymentMethod.CREDIT),
+                false, false);
         order.addProduct(new Product(1234, "Batteries", 5));
 
         OrderJpaRelModel orderJpaRelModel = new OrderJpaRelModel(id, "Vinicius", new ArrayList<>(),
                 new PaymentJpaRelModel(PaymentMethod.CREDIT));
-        orderJpaRelModel.getProducts().add(new ProductJpaRelModel(1234, "Batteries", 5, orderJpaRelModel));
+        orderJpaRelModel.getProducts().add(new ProductJpaRelModel(UUID.randomUUID(), 1234, "Batteries", 5,
+                orderJpaRelModel));
         given(orderMySQLRepository.save(any(OrderJpaRelModel.class))).willReturn(orderJpaRelModel);
 
-        assertDoesNotThrow(() -> orderRepository.save(order));
+        assertDoesNotThrow(() -> orderCommandRepository.save(order));
         verify(orderMySQLRepository, times(1)).save(any(OrderJpaRelModel.class));
     }
 }

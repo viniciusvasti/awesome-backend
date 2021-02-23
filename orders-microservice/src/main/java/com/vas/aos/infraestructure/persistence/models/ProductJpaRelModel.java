@@ -5,14 +5,16 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.UUID;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
 @Table(name = "products")
-public class ProductJpaRelModel {
+public class ProductJpaRelModel extends BaseModel{
     @Id
+    private UUID id;
     private int sku;
     private String name;
     private double price;

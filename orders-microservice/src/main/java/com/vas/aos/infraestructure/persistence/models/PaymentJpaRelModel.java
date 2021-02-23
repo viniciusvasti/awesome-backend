@@ -12,7 +12,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Entity
 @Table(name = "payments")
-public class PaymentJpaRelModel {
+public class PaymentJpaRelModel extends BaseModel{
     @Id
     @Enumerated(EnumType.STRING)
     private PaymentMethod paymentMethod;

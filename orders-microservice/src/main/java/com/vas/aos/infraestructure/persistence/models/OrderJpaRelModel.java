@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
 
@@ -13,7 +14,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @Entity
 @Table(name = "orders")
-public class OrderJpaRelModel {
+public class OrderJpaRelModel extends BaseModel {
     @Id
     private UUID id;
     private String customerName;
@@ -22,4 +23,15 @@ public class OrderJpaRelModel {
     @OneToOne
     @JoinColumn(name = "PAYMENT_ID")
     private PaymentJpaRelModel payment;
+    private LocalDateTime paymentProcessedAt = null;
+    private boolean paymentProcessed = false;
+    private LocalDateTime stockInventoryCheckedAt = null;
+    private boolean stockInventoryChecked = false;
+
+    public OrderJpaRelModel(UUID id, String customerName, List<ProductJpaRelModel> products, PaymentJpaRelModel payment) {
+        this.id = id;
+        this.customerName = customerName;
+        this.products = products;
+        this.payment = payment;
+    }
 }

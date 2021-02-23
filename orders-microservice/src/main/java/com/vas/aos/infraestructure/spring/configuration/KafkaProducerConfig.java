@@ -44,6 +44,7 @@ public class KafkaProducerConfig {
         return props;
     }
 
+    // TODO send msg as JSON or Object
     @Bean
     public KafkaTemplate<Integer, String> kafkaTemplate() {
         return new KafkaTemplate<Integer, String>(producerFactory());

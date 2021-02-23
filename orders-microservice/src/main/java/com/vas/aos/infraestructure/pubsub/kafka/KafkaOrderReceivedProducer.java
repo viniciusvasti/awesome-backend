@@ -2,7 +2,9 @@ package com.vas.aos.infraestructure.pubsub.kafka;
 
 import com.vas.aos.core.component.orders.application.pubsub.OrderReceivedPublisher;
 import com.vas.aos.core.component.orders.application.dtos.event.OrderReceivedEventDTO;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.producer.ProducerRecord;
+import org.slf4j.MDC;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaFailureCallback;
@@ -13,6 +15,7 @@ import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.stereotype.Component;
 import org.springframework.util.concurrent.ListenableFuture;
 
+@Slf4j
 @Component
 public class KafkaOrderReceivedProducer implements OrderReceivedPublisher {
 
@@ -24,19 +27,20 @@ public class KafkaOrderReceivedProducer implements OrderReceivedPublisher {
 
     @Override
     public void publish(OrderReceivedEventDTO message) {
+        log.info("Publishing event {}", message);
         ListenableFuture<SendResult<Integer, String>> future = kafkaTemplate.send(
                 MessageBuilder.withPayload(message.toString())
                         .setHeader(KafkaHeaders.TOPIC, newOrderReceived)
                         .setHeader(KafkaHeaders.TIMESTAMP, System.currentTimeMillis())
-                        // TODO include Correlation ID
+                        .setHeader(KafkaHeaders.CORRELATION_ID, MDC.get("CID"))
                         .build()
         );
 
         future.addCallback(result -> {
-            // log here
+            log.info("Success while publishing");
         }, (KafkaFailureCallback<Integer, String>) ex -> {
             ProducerRecord<Integer, String> failed = ex.getFailedProducerRecord();
-            // log here
+            log.error("Error while publishing", ex);
         });
     }
 }

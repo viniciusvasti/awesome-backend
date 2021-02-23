@@ -10,7 +10,7 @@ import java.util.UUID;
 public class OrderFactoryImpl implements OrderFactory {
     @Override
     public Order create(String customerName, List<Product> products, Payment payment) {
-        Order order = new Order(UUID.randomUUID(), customerName, payment);
+        Order order = new Order(UUID.randomUUID(), customerName, payment, false, false);
         products.forEach(p -> order.addProduct(p));
         return order;
     }

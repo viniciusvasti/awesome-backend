@@ -11,20 +11,45 @@ import com.vas.aos.core.component.orders.domain.entities.Order;
 import com.vas.aos.core.component.orders.domain.entities.Payment;
 import com.vas.aos.core.component.orders.domain.entities.Product;
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Slf4j
 @AllArgsConstructor
 public class OrderRequestServiceImpl implements OrderRequestService {
 
-    final OrderRequestRepository orderRequestRepository;
-    final OrderFactory orderFactory;
-    final OrderReceivedPublisher orderReceivedPublisher;
+    private final OrderRequestRepository orderRequestRepository;
+    private final OrderFactory orderFactory;
+    private final OrderReceivedPublisher orderReceivedPublisher;
 
     // TODO create utility class for mapping objects
     @Override
     public CreatedOrderDTO create(CreateOrderDTO createOrderDTO) {
+        log.info("Createing order: {}", createOrderDTO);
+        Order order = mapCreateOrderDTOToOrder(createOrderDTO);
+        validateOrder(order);
+        orderRequestRepository.save(order);
+        CreatedOrderDTO orderCreated = new CreatedOrderDTO(order.getId());
+        // TODO use Spring Events for publishing event messages
+        publishOrderReceivedEvent(order);
+        return orderCreated;
+    }
+
+    private void publishOrderReceivedEvent(Order order) {
+        orderReceivedPublisher.publish(OrderReceivedEventDTO.builder()
+                .id(order.getId())
+                .customerName(order.getCustomerName())
+                .payment(new OrderReceivedEventDTO.Payment(order.getPayment().getPaymentMethod()))
+                .products(
+                        order.getProducts().stream().map(
+                                p -> new OrderReceivedEventDTO.Product(p.getSku(), p.getName(), p.getPrice())
+                        ).collect(Collectors.toList()))
+                .build());
+    }
+
+    private Order mapCreateOrderDTOToOrder(CreateOrderDTO createOrderDTO) {
         List<Product> products = createOrderDTO.products().stream()
                 .map(productDTO -> new Product(
                         productDTO.sku(),
@@ -36,23 +61,10 @@ public class OrderRequestServiceImpl implements OrderRequestService {
                         new Payment(createOrderDTO.payment().paymentMethod()) : null;
         Order order = orderFactory.create(createOrderDTO.customerName(), products,
                 payment);
-        validateOrder(order, products);
-        orderRequestRepository.save(order);
-        CreatedOrderDTO orderCreated = new CreatedOrderDTO(order.getId());
-        // TODO use Spring Events for publishing event messages
-        orderReceivedPublisher.publish(OrderReceivedEventDTO.builder()
-                .id(order.getId())
-                .customerName(order.getCustomerName())
-                .payment(new OrderReceivedEventDTO.Payment(order.getPayment().getPaymentMethod()))
-                .products(
-                        order.getProducts().stream().map(
-                                p -> new OrderReceivedEventDTO.Product(p.getSku(), p.getName(), p.getPrice())
-                        ).collect(Collectors.toList()))
-                .build());
-        return orderCreated;
+        return order;
     }
 
-    private void validateOrder(Order order, List<Product> products) {
+    private void validateOrder(Order order) {
         // TODO throw exception containing all errors, instead of throwing after the first one
         if (!order.hasProducts()) {
             throw new InvalidOrderRequestException("Order has to have products.");

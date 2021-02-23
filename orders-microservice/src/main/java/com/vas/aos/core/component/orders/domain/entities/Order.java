@@ -15,6 +15,8 @@ public class Order {
     private final String customerName;
     private final List<Product> products = new ArrayList<>();
     private final Payment payment;
+    private boolean paymentProcessed;
+    private boolean stockInventoryChecked;
 
     public void addProduct(Product p) {
         products.add(p);

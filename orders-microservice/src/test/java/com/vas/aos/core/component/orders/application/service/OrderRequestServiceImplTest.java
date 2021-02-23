@@ -4,6 +4,7 @@ import com.vas.aos.core.component.orders.application.dtos.CreateOrderDTO;
 import com.vas.aos.core.component.orders.application.dtos.CreatedOrderDTO;
 import com.vas.aos.core.component.orders.application.dtos.PaymentDTO;
 import com.vas.aos.core.component.orders.application.dtos.ProductDTO;
+import com.vas.aos.core.component.orders.application.dtos.event.OrderReceivedEventDTO;
 import com.vas.aos.core.component.orders.application.exceptions.InvalidOrderRequestException;
 import com.vas.aos.core.component.orders.application.pubsub.OrderReceivedPublisher;
 import com.vas.aos.core.component.orders.application.repository.OrderRequestRepository;
@@ -27,6 +28,7 @@ public class OrderRequestServiceImplTest {
 
     @Mock
     private OrderRequestRepository orderRequestRepository;
+    @Mock
     private OrderReceivedPublisher orderReceivedPublisher;
     private OrderFactory orderFactory;
     private OrderRequestService orderRequestService;
@@ -45,6 +47,7 @@ public class OrderRequestServiceImplTest {
         createOrderDTO.addProduct(new ProductDTO(1234, "Batteries", 5));
 
         willDoNothing().given(orderRequestRepository).save(any(Order.class));
+        willDoNothing().given(orderReceivedPublisher).publish(any(OrderReceivedEventDTO.class));
 
         CreatedOrderDTO createdOrderDTO = orderRequestService.create(createOrderDTO);
         assertThat(createdOrderDTO).isNotNull();
