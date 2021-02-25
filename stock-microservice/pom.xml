@@ -14,6 +14,7 @@
     <version>1.0.0</version>
     <name>stock-microservice</name>
     <description>Stock Microservice for Awesome Online Store</description>
+    <packaging>jar</packaging>
     <properties>
         <java.version>15</java.version>
     </properties>

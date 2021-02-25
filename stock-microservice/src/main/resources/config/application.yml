@@ -1,7 +1,7 @@
 # TODO setup flyway migrations
 spring:
   datasource:
-    url: jdbc:h2:file:~/h2/data/orders;DB_CLOSE_DELAY=-1
+    url: jdbc:h2:file:~/h2/data/stock;DB_CLOSE_DELAY=-1
     driverClassName: org.h2.Driver
     username: sa
     password: 1234
@@ -16,3 +16,5 @@ spring:
     topic:
       new-order-received: order.new-order-received
     bootstrap-servers: localhost:9092
+server:
+  port: 8211

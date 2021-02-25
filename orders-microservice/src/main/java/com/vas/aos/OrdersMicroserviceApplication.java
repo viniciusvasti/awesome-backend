@@ -34,6 +34,7 @@ import static java.util.Collections.singletonList;
 @EnableSwagger2
 @ComponentScan(basePackages = "com.vas.aos.presentation.api")
 public class OrdersMicroserviceApplication {
+
     // TODO split in distinct configuration classes
 
 //    @Autowired
