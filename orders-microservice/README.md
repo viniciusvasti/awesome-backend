@@ -26,7 +26,7 @@ Pre-requisites:
 This app is containerized, so if you have docker, you can create an image running something like:  
 `docker build -t aos/orders-microservice:latest .`  
 Then run a container for it:  
-`docker run --name orders-microservice -d -p 8110:8210 aos/orders-microservice:latest`
+`docker run --network="host" --name orders-microservice -d -p 8210:8210 aos/orders-microservice:latest`
 
 Or... You can package it:  
 `mvn clean package`  

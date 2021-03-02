@@ -22,7 +22,7 @@ spring:
       order-payment-processed: payment.order-payment-processed
       order-payment-failed: payment.order-payment-failed
     consumer-group-id: orders.ms
-    bootstrap-servers: localhost:9092
+    bootstrap-servers: 127.0.0.1:9092
 hibernate:
   enable_lazy_load_no_trans: true
 server:
