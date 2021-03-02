@@ -11,10 +11,19 @@ spring:
     database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
       ddl-auto: create-drop
-    show-sql: true
+    show-sql: false
   kafka:
     topic:
       new-order-received: order.new-order-received
+      process-order-payment: order.process-order-payment
+      new-order-approved: order.new-order-approved
+      order-products-reserved: stock.order-products-reserved
+      order-products-reservation-failed: stock.order-products-reservation-failed
+      order-payment-processed: payment.order-payment-processed
+      order-payment-failed: payment.order-payment-failed
+    consumer-group-id: orders.ms
     bootstrap-servers: localhost:9092
+hibernate:
+  enable_lazy_load_no_trans: true
 server:
   port: 8210

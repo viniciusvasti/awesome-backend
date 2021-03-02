@@ -1,8 +1,8 @@
 package com.vas.aos.presentation.api;
 
-import com.vas.aos.core.component.orders.application.dtos.CreateOrderDTO;
-import com.vas.aos.core.component.orders.application.dtos.CreatedOrderDTO;
-import com.vas.aos.core.component.orders.application.service.OrderRequestService;
+import com.vas.aos.core.application.dtos.CreateOrderDTO;
+import com.vas.aos.core.application.dtos.CreatedOrderDTO;
+import com.vas.aos.core.application.service.OrderRequestService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;

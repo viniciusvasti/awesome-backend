@@ -32,13 +32,10 @@ import static java.util.Collections.singletonList;
 
 @SpringBootApplication
 @EnableSwagger2
-@ComponentScan(basePackages = "com.vas.aos.presentation.api")
+@ComponentScan(basePackages = {"com.vas.aos.presentation.api", "com.vas.aos.infrastructure"})
 public class OrdersMicroserviceApplication {
 
     // TODO split in distinct configuration classes
-
-//    @Autowired
-//    private TypeResolver typeResolver;
 
     public static void main(String[] args) {
         SpringApplication.run(OrdersMicroserviceApplication.class, args);
@@ -100,11 +97,10 @@ public class OrdersMicroserviceApplication {
     // Setting Dependency Injection
     @Bean
     BeanFactoryPostProcessor beanFactoryPostProcessor(ApplicationContext beanRegistry) {
-        return beanFactory -> {
-            genericApplicationContext(
-                    (BeanDefinitionRegistry) ((AnnotationConfigServletWebServerApplicationContext) beanRegistry)
-                            .getBeanFactory());
-        };
+        return beanFactory ->
+                genericApplicationContext(
+                        (BeanDefinitionRegistry) ((AnnotationConfigServletWebServerApplicationContext) beanRegistry)
+                                .getBeanFactory());
     }
 
     void genericApplicationContext(BeanDefinitionRegistry beanRegistry) {
