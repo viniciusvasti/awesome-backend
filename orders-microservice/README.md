@@ -45,4 +45,6 @@ where Herberto Graça put together concepts of the most popular Architecture Sty
 Adapters, Onion, Clean, etc).
 
 This microservice has interaction with an Apache Kafka instance, for integrating with another
-microservices in an event-drive pattern.
+microservices in an event-driven pattern.
+
+The messages/events flow is described well [here](https://vinisantos.dev/posts/awesome-backend-part3-dynamic-kafka-events)
