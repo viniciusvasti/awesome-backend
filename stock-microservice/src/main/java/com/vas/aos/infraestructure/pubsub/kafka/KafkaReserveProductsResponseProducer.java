@@ -1,7 +1,8 @@
 package com.vas.aos.infraestructure.pubsub.kafka;
 
+import com.fasterxml.jackson.databind.JsonNode;
 import com.vas.aos.core.component.stock.application.dtos.event.OrderReceivedEventDTO;
-import com.vas.aos.core.component.stock.application.pubsub.OrderStockInventoryResponsePublisher;
+import com.vas.aos.core.component.stock.application.pubsub.ReserveProductsResponsePublisher;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -10,13 +11,13 @@ import org.springframework.stereotype.Component;
 
 @Slf4j
 @Component
-public class KafkaOrderStockInventoryResponseProducer implements OrderStockInventoryResponsePublisher {
+public class KafkaReserveProductsResponseProducer implements ReserveProductsResponsePublisher {
 
     @Value("${spring.kafka.topic.new-order-received}")
     private String newOrderReceived;
 
     @Autowired
-    private KafkaTemplate<Integer, String> kafkaTemplate;
+    private KafkaTemplate<String, JsonNode> kafkaTemplate;
 
     @Override
     public void publish(OrderReceivedEventDTO message) {

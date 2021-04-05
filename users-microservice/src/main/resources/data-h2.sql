@@ -1,0 +1,1 @@
+insert into USERS values ('vinicius', '$2a$10$XnXtglIGoHg/6TbOL1.kNuY/n7MqF5HhbHfs5oGf1C9HuqvXJsrg6')

@@ -11,7 +11,6 @@ import org.springframework.boot.web.servlet.context.AnnotationConfigServletWebSe
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ClassPathBeanDefinitionScanner;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.type.classreading.MetadataReader;
 import org.springframework.core.type.classreading.MetadataReaderFactory;
 import org.springframework.core.type.filter.TypeFilter;
@@ -24,19 +23,16 @@ import springfox.documentation.builders.ResponseBuilder;
 import springfox.documentation.service.Tag;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
-import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import java.time.LocalDate;
 
 import static java.util.Collections.singletonList;
 
 @SpringBootApplication
-@EnableSwagger2
-@ComponentScan(basePackages = {"com.vas.aos.presentation.api", "com.vas.aos.infraestructure"})
-public class StockMicroserviceApplication {
+public class UsersMicroserviceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(StockMicroserviceApplication.class, args);
+        SpringApplication.run(UsersMicroserviceApplication.class, args);
     }
 
     static TypeFilter removeModelAndEntitiesFilter() {
@@ -55,7 +51,7 @@ public class StockMicroserviceApplication {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
                 .apis(RequestHandlerSelectors.any())
-                .paths(PathSelectors.ant("/api/v1/stock-management/*"))
+                .paths(PathSelectors.ant("/api/v1/users-management/*"))
                 .build()
                 .directModelSubstitute(LocalDate.class, String.class)
                 .genericModelSubstitutes(ResponseEntity.class)
@@ -81,8 +77,8 @@ public class StockMicroserviceApplication {
 //                .securitySchemes(singletonList(apiKey()))
 //                .securityContexts(singletonList(securityContext()))
 //                .enableUrlTemplating(true)
-                .tags(new Tag("Stock Microservice", "All apis relating to Awesome Online " +
-                        "Store Products Stock"));
+                .tags(new Tag("Users Microservice", "All apis relating to Awesome Online " +
+                        "Store Users"));
     }
 
     // For mapping Java 14 records to work
@@ -107,4 +103,5 @@ public class StockMicroserviceApplication {
         beanDefinitionScanner.addIncludeFilter(removeModelAndEntitiesFilter());
         beanDefinitionScanner.scan("com.vas.aos");
     }
+
 }

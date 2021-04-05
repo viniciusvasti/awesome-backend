@@ -1,0 +1,20 @@
+(x) Orders posts OrderReceivedEvent on order.new-order-received (id, customerName, products, payment)
+(x) Stock listens OrderReceivedEvent on order.new-order-received
+( ) Stock reserves products in OrderReceivedEvent
+( ) Stock answers SUCCESS at reserving products posting on stock.order-products-reserved (id,
+status, message)
+    (x) Orders sets Order as stockInventoryChecked = SUCCEEDED
+    (x) Orders posts message on order.process-order-payment asking for payment process (id,
+    payment)
+    ( ) Payments listens message asking for payment process on order.process-order-payment
+    ( ) Payments processes payment
+    ( ) Payments answers SUCCESS at processing payment posting on payment.order-payment-processed
+        (x) Orders sets Order as paymentProcessed = SUCCEEDED
+        (x) Order posts Order approved on order.new-order-approved
+        ( ) Stock listens on order.new-order-approved and decreases products inventory
+        ( ) Shipments listens on order.new-order-approved and triggers shipment process
+        ( ) Notifications listens on order.new-order-approved and sends user notification
+    ( ) Payments answers FAIL at processing payment
+        ...
+( ) Stock answers FAIL at reserving products in OrderReceivedEvent
+    ...

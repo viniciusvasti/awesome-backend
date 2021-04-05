@@ -18,5 +18,5 @@
 (   ) Aplicar event sourcing
 (   ) Containerizar
 (   ) Orquestrar com K8S
-(   ) Refatorar microserviços para Clean Architecture
 (   ) Prometheus
+(   ) Implementar schedule para reenviar mensagens quando order está pendente
