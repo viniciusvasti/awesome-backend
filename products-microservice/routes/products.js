@@ -14,15 +14,14 @@ router.get("/:sku(\\d+)", (req, res) => {
 });
 
 router.post("/", (req, res) => {
-  console.log("Receiving request on", req.originalUrl);
-  mockedProducts = [
-    ...mockedProducts,
-    {
-      sku: "0005",
-      name: "Xiami Mi 9 SE",
-      price: "250",
-    },
-  ];
+  console.log(
+    "Receiving request on",
+    req.originalUrl,
+    "| having body",
+    req.body
+  );
+  // TODO validation over body
+  mockedProducts = [...mockedProducts, req.body];
   res.send(mockedProducts);
 });
 
