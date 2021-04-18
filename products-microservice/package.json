@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/viniciusvasti/awesome-backend#readme",
   "dependencies": {
+    "electrolyte": "^0.3.0",
     "eslint-config-prettier": "^8.2.0",
     "eslint-plugin-prettier": "^3.4.0",
     "express": "^4.17.1",

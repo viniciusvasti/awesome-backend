@@ -1,22 +1,25 @@
-const productRepository = require("../repositories/productRepository");
+exports = module.exports = function (productRepository) {
+  return {
+    getAll: function getAll() {
+      return productRepository.findAll();
+    },
 
-function getAll() {
-  return productRepository.findAll();
-}
+    getBySku: function getBySku(sku) {
+      return productRepository.findBySku(sku);
+    },
 
-function getBySku(sku) {
-  return productRepository.findBySku(sku);
-}
-
-function create(product) {
-  if (!productIsValid(product)) {
-    throw new Error("Product is not valid");
-  }
-  return productRepository.insert(product);
-}
+    create: function create(product) {
+      if (!productIsValid(product)) {
+        throw new Error("Product is not valid");
+      }
+      return productRepository.insert(product);
+    },
+  };
+};
 
 function productIsValid(product) {
   return product.sku && product.name && product.price;
 }
 
-module.exports = { getAll, getBySku, create };
+exports["@singleton"];
+exports["@require"] = ["productRepository"];

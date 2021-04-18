@@ -1,8 +1,14 @@
 const express = require("express");
+const IoC = require("electrolyte");
 const logger = require("morgan-body");
 
+IoC.use(IoC.dir('controllers'));
+IoC.use(IoC.dir('services'));
+IoC.use(IoC.dir('repositories'));
+
+const productController = IoC.create('productController');
+
 const app = express();
-const productController = require("./controllers/productController");
 
 const port = 8013;
 
