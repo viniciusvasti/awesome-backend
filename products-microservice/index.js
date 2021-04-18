@@ -1,17 +1,16 @@
 const express = require("express");
+const logger = require("morgan-body");
 
 const app = express();
 const productsRouter = require("./routes/products");
 
 const port = 8013;
 
+// Setting middlewares
 app.use(express.json());
-app.use("", (req, res, next) => {
-  const requestUri = `Receiving request on ${req.originalUrl}`;
-  const requestBody = `| having body ${JSON.stringify(req.body)}`;
-  console.log(`${requestUri} ${requestBody}`);
-  next();
-});
+logger(app, { prettify: false, includeNewLine: true });
+
+// Setting routes
 app.use("/api/v1/product-management/products", productsRouter);
 
 app.listen(port, () => {

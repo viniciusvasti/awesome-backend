@@ -30,6 +30,7 @@
     "eslint-config-prettier": "^8.2.0",
     "eslint-plugin-prettier": "^3.4.0",
     "express": "^4.17.1",
+    "morgan-body": "^2.6.5",
     "prettier": "^2.2.1"
   },
   "devDependencies": {
