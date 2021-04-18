@@ -2,7 +2,7 @@ const express = require("express");
 const logger = require("morgan-body");
 
 const app = express();
-const productsRouter = require("./routes/products");
+const productController = require("./controllers/productController");
 
 const port = 8013;
 
@@ -11,7 +11,7 @@ app.use(express.json());
 logger(app, { prettify: false, includeNewLine: true });
 
 // Setting routes
-app.use("/api/v1/product-management/products", productsRouter);
+app.use("/api/v1/product-management/products", productController);
 
 app.listen(port, () => {
   console.log(`Awesome Backend - Products Microservice is running on ${port}`);

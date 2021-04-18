@@ -1,35 +1,31 @@
 const express = require("express");
+const productService = require("../services/productService");
 
 const router = express.Router();
-let mockedProducts = require("../mocks/products");
 
 router.get("/", (req, res) => {
-  res.json(mockedProducts);
+  res.json(productService.getAll());
 });
 
 // By appending the RegEx "\d+" to ":sku" path param, it is defining that ":sku" needs to be one or more digits
 router.get("/:sku(\\d+)", (req, res) => {
   const { sku } = req.params;
-  const foundEntity = mockedProducts.find(({ sku }) => sku === sku);
+  const foundEntity = productService.getBySku(sku);
   if (!foundEntity) {
     res.status(404).json({ message: `Product not found for SKU ${sku}` });
-  } else {
-    res.json(foundEntity);
+    return;
   }
+  res.json(foundEntity);
 });
 
 router.post("/", (req, res) => {
   const newProduct = req.body;
-  if (!productIsValid(newProduct)) {
+  try {
+    const createdProduct = productService.create(newProduct);
+    res.status(201).json(createdProduct);
+  } catch (error) {
     res.status(400).json({ message: "Product is not valid" });
-  } else {
-    mockedProducts = [...mockedProducts, newProduct];
-    res.json(mockedProducts);
   }
 });
-
-function productIsValid(product) {
-  return product.sku && product.name && product.price;
-}
 
 module.exports = router;
