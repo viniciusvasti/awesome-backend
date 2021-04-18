@@ -1,0 +1,40 @@
+{
+  "name": "awsmbknd-products-microservice",
+  "version": "1.0.0",
+  "description": "Microservice responsible for Product context from Awesome Online Store",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viniciusvasti/awesome-backend.git"
+  },
+  "keywords": [
+    "microservices",
+    "ddd",
+    "backend",
+    "training",
+    "javascript",
+    "nodejs",
+    "vinisandos.dev"
+  ],
+  "author": "Vinicius A. dos Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viniciusvasti/awesome-backend/issues"
+  },
+  "homepage": "https://github.com/viniciusvasti/awesome-backend#readme",
+  "dependencies": {
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "express": "^4.17.1",
+    "prettier": "^2.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.24.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
