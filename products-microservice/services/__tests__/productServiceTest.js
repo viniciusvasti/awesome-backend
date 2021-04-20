@@ -1,4 +1,5 @@
-const assert = require("assert");
+const expect = require("chai").expect;
+const assert = require("chai").assert;
 const productServiceFactory = require("../productService");
 const mockedProducts = require("../../mocks/products");
 
@@ -13,28 +14,25 @@ const productService = productServiceFactory(mockedProductRepository);
 describe("Product Service get all", () => {
   it("should return all products", () => {
     const products = productService.getAll();
-    assert.strictEqual(products.length, 3);
+    expect(products).to.have.lengthOf(3);
   });
 });
 
 describe("Product Service get one", () => {
   it("should return one product", () => {
-    const products = productService.getBySku(123);
-    assert.notStrictEqual(
-      products,
-      mockedProducts.find((p) => p.sku == 123)
-    );
+    const product = productService.getBySku(0001);
+    expect(product).to.equal(mockedProducts.find((p) => p.sku == 0001));
   });
 });
 
 describe("Product Service create product", () => {
   it("should return create a product", () => {
-    const products = productService.create({
+    const product = productService.create({
       sku: 1234,
       name: "Smartphone",
       price: 124.0,
     });
-    assert.notStrictEqual(products, {
+    expect(product).to.deep.equal({
       sku: 1234,
       name: "Smartphone",
       price: 124.0,
