@@ -1,18 +1,18 @@
 exports = module.exports = function (productRepository) {
   return {
-    getAll: function getAll() {
-      return productRepository.findAll();
+    getAll: async () => {
+      return await productRepository.findAll();
     },
 
-    getBySku: function getBySku(sku) {
-      return productRepository.findBySku(sku);
+    getBySku: async (sku) => {
+      return await productRepository.findBySku(sku);
     },
 
-    create: function create(product) {
+    create: async (product) => {
       if (!productIsValid(product)) {
         throw new Error("Product is not valid");
       }
-      return productRepository.insert(product);
+      return await productRepository.insert(product);
     },
   };
 };

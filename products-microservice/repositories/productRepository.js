@@ -1,18 +1,24 @@
+const Product = require("../models/Product");
 let mockedProducts = require("../mocks/products");
 
 exports = module.exports = function () {
   return {
-    findAll: function findAll() {
-      return mockedProducts;
+    findAll: async () => {
+      return await Product.find();
     },
 
-    findBySku: function findBySku(sku) {
-      return mockedProducts.find((product) => product.sku === sku);
+    findBySku: async (sku) => {
+      return await Product.findOne({ sku });
     },
 
-    insert: function insert(product) {
-      mockedProducts = [...mockedProducts, product];
-      return product;
+    insert: async (product) => {
+      const newProduct = new Product({
+        sku: product.sku,
+        name: product.name,
+        price: product.price,
+      });
+
+      return await newProduct.save();
     },
   };
 };
