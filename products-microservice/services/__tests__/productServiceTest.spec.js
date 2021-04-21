@@ -1,5 +1,4 @@
-const expect = require("chai").expect;
-const assert = require("chai").assert;
+const { assert, expect } = require("chai");
 const productServiceFactory = require("../productService");
 const mockedProducts = require("../../mocks/products");
 
