@@ -1,5 +1,4 @@
 const Product = require("../models/Product");
-let mockedProducts = require("../mocks/products");
 
 exports = module.exports = function () {
   return {
@@ -19,6 +18,19 @@ exports = module.exports = function () {
       });
 
       return await newProduct.save();
+    },
+
+    insertMany: async (products) => {
+      const newProducts = products.map(
+        (product) =>
+          new Product({
+            sku: product.sku,
+            name: product.name,
+            price: product.price,
+          })
+      );
+
+      return await Product.insertMany(newProducts);
     },
   };
 };

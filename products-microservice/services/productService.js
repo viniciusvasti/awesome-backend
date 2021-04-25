@@ -10,9 +10,18 @@ exports = module.exports = function (productRepository) {
 
     create: async (product) => {
       if (!productIsValid(product)) {
-        throw new Error("Product is not valid");
+        throw new Error(`Product is not valid: sku ${product.sku}`);
       }
       return await productRepository.insert(product);
+    },
+
+    createMany: async (products) => {
+      products.forEach(product => {        
+        if (!productIsValid(product)) {
+          throw new Error(`Product is not valid: sku ${product.sku}`);
+        }
+      });
+      return await productRepository.insertMany(products);
     },
   };
 };
