@@ -23,23 +23,34 @@ app.listen(port, () => {
   console.log(`Awesome Backend - Products Microservice is running on ${port}`);
 });
 
-const productService = IoC.create('productService');
-productService.createMany([
-  {
-    sku: "0001",
-    name: "IPhone 12",
-    price: "10000",
-  },
-  {
-    sku: "0002",
-    name: "Samsung S20",
-    price: "8000",
-  },
-  {
-    sku: "0003",
-    name: "Moto Raz4r",
-    price: "2000",
-  },
-]);
+const initProductsCollection = () => {
+  const productService = IoC.create("productService");
+  productService.count().then((count) => {
+    if (count === 0) {
+      console.log("Creating some products...");
+      productService
+        .createMany([
+          {
+            sku: "0001",
+            name: "IPhone 12",
+            price: "10000",
+          },
+          {
+            sku: "0002",
+            name: "Samsung S20",
+            price: "8000",
+          },
+          {
+            sku: "0003",
+            name: "Moto Raz4r",
+            price: "2000",
+          },
+        ])
+        .then(() => console.log("Created some products."));
+    }
+  });
+};
+
+initProductsCollection();
 
 module.exports = app;

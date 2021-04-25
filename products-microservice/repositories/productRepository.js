@@ -32,6 +32,10 @@ exports = module.exports = function () {
 
       return await Product.insertMany(newProducts);
     },
+
+    count: async () => {
+      return await Product.countDocuments();
+    },
   };
 };
 

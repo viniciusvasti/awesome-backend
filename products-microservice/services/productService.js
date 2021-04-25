@@ -16,13 +16,15 @@ exports = module.exports = function (productRepository) {
     },
 
     createMany: async (products) => {
-      products.forEach(product => {        
+      products.forEach((product) => {
         if (!productIsValid(product)) {
           throw new Error(`Product is not valid: sku ${product.sku}`);
         }
       });
       return await productRepository.insertMany(products);
     },
+
+    count: async () => productRepository.count(),
   };
 };
 
