@@ -23,8 +23,22 @@ app.listen(port, () => {
   console.log(`Awesome Backend - Products Microservice is running on ${port}`);
 });
 
-const initProductsCollection = () => {
+const initDBCollections = () => {
   const productService = IoC.create("productService");
+  const productCategoryService = IoC.create("productCategoryService");
+  productCategoryService.count().then((count) => {
+    if (count === 0) {
+      console.log("Creating some product categories...");
+      productCategoryService
+        .createMany([
+          { name: "Electronics" },
+          { name: "Computers" },
+          { name: "Smart Home" },
+        ])
+        .then(() => console.log("Created some product categories."));
+    }
+  });
+
   productService.count().then((count) => {
     if (count === 0) {
       console.log("Creating some products...");
@@ -51,6 +65,6 @@ const initProductsCollection = () => {
   });
 };
 
-initProductsCollection();
+initDBCollections();
 
 module.exports = app;
