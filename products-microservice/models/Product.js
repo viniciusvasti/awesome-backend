@@ -1,7 +1,7 @@
 const db = require("../database/db");
 
 const ProductSchema = new db.Schema({
-  sku: { type: String, require: true },
+  sku: { type: String, require: true, index: true },
   name: { type: String, require: true, lowercase: true },
   price: { type: Number, require: true },
   createdAt: { type: Date, default: Date.now, select: false },
