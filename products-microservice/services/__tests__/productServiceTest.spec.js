@@ -8,10 +8,19 @@ const { expect } = chai;
 const mockedProductRepository = {
   findAll: () => mockedProducts,
   findBySku: (sku) => mockedProducts[0],
-  insert: (product) => product,
+  insert: (product) => ({ ...product, category: { _id: "423423" } }),
 };
 
-const productService = productServiceFactory(mockedProductRepository);
+const mockedProductCategoryRepository = {
+  findByName: async (name) => {
+    return { _id: "423423", name: "Electronics" };
+  },
+};
+
+const productService = productServiceFactory(
+  mockedProductRepository,
+  mockedProductCategoryRepository
+);
 
 describe("Product Service get all", () => {
   it("should return all products", async () => {
@@ -32,12 +41,14 @@ describe("Product Service create product", () => {
     const product = await productService.create({
       sku: 1234,
       name: "Smartphone",
+      category: { name: "Electronics" },
       price: 124.0,
     });
     expect(product).to.deep.equal({
       sku: 1234,
       name: "Smartphone",
       price: 124.0,
+      category: { _id: "423423" },
     });
   });
 

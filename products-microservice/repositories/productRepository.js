@@ -15,6 +15,7 @@ exports = module.exports = function () {
         sku: product.sku,
         name: product.name,
         price: product.price,
+        category: product.category,
       });
 
       return await newProduct.save();
@@ -27,6 +28,7 @@ exports = module.exports = function () {
             sku: product.sku,
             name: product.name,
             price: product.price,
+            category: product.category,
           })
       );
 

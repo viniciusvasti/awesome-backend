@@ -6,6 +6,10 @@ exports = module.exports = function () {
       return await ProductCategory.find();
     },
 
+    findById: async (id) => {
+      return await ProductCategory.findById(id);
+    },
+
     findByName: async (name) => {
       return await ProductCategory.findOne({ name });
     },
