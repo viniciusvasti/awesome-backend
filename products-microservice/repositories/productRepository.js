@@ -3,11 +3,11 @@ const Product = require("../models/Product");
 exports = module.exports = function () {
   return {
     findAll: async () => {
-      return await Product.find();
+      return await Product.find().populate("category", "name");
     },
 
     findBySku: async (sku) => {
-      return await Product.findOne({ sku });
+      return await Product.findOne({ sku }).populate("category", "name");
     },
 
     insert: async (product) => {
