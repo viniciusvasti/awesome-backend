@@ -14,7 +14,12 @@ const PORT = process.env.PORT || 8213;
 // pino logger
 app.use(pino);
 
-// logger
+// Global error handling
+app.on("error", (err, ctx) => {
+  pino.logger.error(err, ctx);
+});
+
+// logging
 app.use(async (ctx, next) => {
   ctx.log.debug("request received");
   await next();
