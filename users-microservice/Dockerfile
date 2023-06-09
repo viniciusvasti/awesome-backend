@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk15:ubi
+FROM openjdk:17-oracle
 
 MAINTAINER Vinicius A Santos
 
@@ -9,7 +9,6 @@ ADD target/users-microservice-1.0.0.jar users-microservice-1.0.0.jar
 # COPY target/classes/logback.xml /config/
 
 COPY target/classes/config/* /config/
-COPY target/classes/data-h2.sql /
 
 # ENV JAVA_OPTS="-Xmx256m -Xms256m -XX:MetaspaceSize=48m -XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dlogging.config=file:/config/logback.xml -Djava.security.egd=file:/dev/./urandom"
 
