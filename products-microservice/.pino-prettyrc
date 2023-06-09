@@ -1,0 +1,7 @@
+{
+  "colorize": true,
+  "levelFirst": true,
+  "translateTime": "yyyy-mm-dd HH:MM:ss.l o",
+  "ignore": "req.headers,req.id,req.remoteAddress,req.remotePort,res.headers",
+  "singleLine": true
+}
