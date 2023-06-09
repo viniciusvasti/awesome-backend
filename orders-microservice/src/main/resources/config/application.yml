@@ -1,14 +1,13 @@
 # TODO setup flyway migrations
 spring:
+  # mysql spring data source
   datasource:
-    url: jdbc:h2:file:~/h2/data/orders;DB_CLOSE_DELAY=-1
-    driverClassName: org.h2.Driver
-    username: sa
-    password: 1234
-    platform: h2
-    initialization-mode: always
+    url: jdbc:mysql://mysql:3306/aos?useSSL=false&serverTimezone=UTC
+    username: root
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     hibernate:
       ddl-auto: create-drop
     show-sql: false
@@ -22,7 +21,7 @@ spring:
       order-payment-processed: payment.order-payment-processed
       order-payment-failed: payment.order-payment-failed
     consumer-group-id: orders.ms
-    bootstrap-servers: 127.0.0.1:9092
+    bootstrap-servers: kafka:9092
 hibernate:
   enable_lazy_load_no_trans: true
 server:
