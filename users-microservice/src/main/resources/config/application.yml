@@ -1,14 +1,12 @@
 # TODO setup flyway migrations
 spring:
   datasource:
-    url: jdbc:h2:file:~/h2/data/users;DB_CLOSE_DELAY=-1
-    driverClassName: org.h2.Driver
-    username: sa
-    password: 1234
-    platform: h2
-    initialization-mode: always
+    url: jdbc:mysql://mysql:3306/aos?useSSL=false&serverTimezone=UTC
+    username: root
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     hibernate:
       ddl-auto: create-drop
     show-sql: true

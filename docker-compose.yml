@@ -1,0 +1,64 @@
+version: "2"
+
+services:
+  # Services
+  orders-microservice:
+    image: aos/orders-microservice:latest
+    ports:
+      - 8210:8210
+    environment:
+      - ENVIRONMENT=dev
+    volumes:
+      - ./orders-microservice:/app
+    depends_on:
+      - mysql
+      - kafka
+  stock-microservice:
+    image: aos/stock-microservice:latest
+    ports:
+      - 8211:8211
+    environment:
+      - ENVIRONMENT=dev
+    volumes:
+      - ./stock-microservice:/app
+    depends_on:
+      - mysql
+      - kafka
+  users-microservice:
+    image: aos/users-microservice:latest
+    ports:
+      - 8212:8212
+    environment:
+      - ENVIRONMENT=dev
+    volumes:
+      - ./users-microservice:/app
+    depends_on:
+      - mysql
+
+  # Infrastructure
+  mysql:
+    image: mysql:5.7
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_DATABASE: aos
+      MYSQL_ROOT_HOST: "%"
+      MYSQL_ROOT_PASSWORD: "password"
+      MYSQL_SSL: "false"
+  kafka:
+    image: docker.io/bitnami/kafka:3.4
+    ports:
+      - "9092:9092"
+      - "9094:9094"
+    volumes:
+      - "kafka_data:/bitnami"
+    environment:
+      - ALLOW_PLAINTEXT_LISTENER=yes
+      - KAFKA_CFG_LISTENERS=PLAINTEXT://:9092,CONTROLLER://:9093,EXTERNAL://:9094
+      - KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT://kafka:9092,EXTERNAL://localhost:9094
+      - KAFKA_CFG_LISTENER_SECURITY_PROTOCOL_MAP=CONTROLLER:PLAINTEXT,EXTERNAL:PLAINTEXT,PLAINTEXT:PLAINTEXT
+
+volumes:
+  kafka_data:
+    driver: local
