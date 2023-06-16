@@ -1,0 +1,64 @@
+{
+  "productToBeCreated": {
+    "sku": "1234567890",
+    "name": "Vans Oldskool",
+    "price": 59.99
+  },
+  "productsList": [
+    {
+      "id": "485c8f7e-3088-476b-bbfd-5599be3203c8",
+      "sku": "42984623874",
+      "name": "Nike Air Max 90",
+      "price": 119.99,
+      "description": "Beautiful shoes"
+    },
+    {
+      "id": "6cd91b68-6151-42f5-92ea-2afc62e591f9",
+      "sku": "42984623875",
+      "name": "Nike Air Max 95",
+      "price": 139.99
+    },
+    {
+      "id": "28203bd4-c95c-436e-99f4-7efac86007f6",
+      "sku": "42984623876",
+      "name": "Adidas Superstar",
+      "price": 79.99
+    },
+    {
+      "id": "c95570c2-777b-462f-a1ee-75e5f2661a4a",
+      "sku": "42984623877",
+      "name": "Adidas Stan Smith",
+      "price": 89.99
+    },
+    {
+      "id": "02a9ad6f-b144-4b6f-bf0b-4077d56ddac2",
+      "sku": "42984623878",
+      "name": "Puma Suede",
+      "price": 69.99
+    },
+    {
+      "id": "38ef5038-090b-4a73-ab48-5bfc6d874797",
+      "sku": "42984623879",
+      "name": "New Balance 574",
+      "price": 99.99
+    },
+    {
+      "id": "1c417fc6-0cba-4b6d-a556-9d94372a181b",
+      "sku": "42984623880",
+      "name": "Vans Authentic",
+      "price": 59.99
+    },
+    {
+      "id": "0ec4b8c9-831e-496a-af33-b37aa8af2245",
+      "sku": "42984623881",
+      "name": "Nike Nightgazer",
+      "price": 69.99
+    },
+    {
+      "id": "86522ba1-e3cc-4dab-a132-3f0f408f5fb7",
+      "sku": "42984623882",
+      "name": "Adidas Gazelle",
+      "price": 79.99
+    }
+  ]
+}
