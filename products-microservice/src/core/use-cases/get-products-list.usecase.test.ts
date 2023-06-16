@@ -1,9 +1,9 @@
-import sinon from "sinon";
-import Product from "../entities/Product.ts";
-import ProductRepository from "../ports/ProductRepository.port.ts";
-import GetProductsListUseCase from "./get-products-list.usecase.ts";
-import { UUID } from "crypto";
-import { productsList } from "../../../test/mocks/products.mock.json";
+import sinon from 'sinon';
+import Product from '../entities/Product.ts';
+import ProductRepository from '../ports/ProductRepository.port.ts';
+import GetProductsListUseCase from './get-products-list.usecase.ts';
+import { UUID } from 'crypto';
+import { productsList } from '../../../test/mocks/products.mock.json';
 
 const products = productsList.map(
   (product) =>
@@ -23,13 +23,13 @@ class ProductRepositoryMock implements ProductRepository {
   update = sinon.stub();
 }
 
-describe("GetProductsListUseCase", () => {
+describe('GetProductsListUseCase', () => {
   afterEach(() => {
     sinon.restore();
   });
 
-  describe("execute", () => {
-    it("when there are products, should return a list of products", async () => {
+  describe('execute', () => {
+    it('when there are products, should return a list of products', async () => {
       // Arrange
       const productRepository = new ProductRepositoryMock();
       productRepository.listAll.resolves(products);
@@ -46,7 +46,7 @@ describe("GetProductsListUseCase", () => {
       expect(productRepository.listAll.calledOnce).toBe(true);
     });
 
-    it("when there are no products, should return an empty list", async () => {
+    it('when there are no products, should return an empty list', async () => {
       // Arrange
       const productRepository = new ProductRepositoryMock();
       productRepository.listAll.resolves([]);

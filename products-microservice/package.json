@@ -5,11 +5,13 @@
   "main": "src/index.js",
   "type": "module",
   "scripts": {
+    "build": "tsc",
     "dev": "nodemon src/index.ts | pino-pretty",
     "start": "node ./dist/index.js | pino-pretty -l -c -t \"yyyy-mm-dd HH:MM:ss.l o\"",
-    "build": "tsc",
     "test": "jest --coverage",
-    "test:dev": "jest --watch"
+    "test:dev": "jest --watch",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix"
   },
   "repository": {
     "type": "git",
@@ -18,7 +20,7 @@
   "author": "Vinicius A. dos Santos",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.1.4",
+    "dotenv": "^16.3.0",
     "joi": "^17.9.2",
     "koa": "^2.14.2",
     "koa-body": "^6.0.1",
@@ -36,11 +38,8 @@
     "@types/sinon": "^10.0.15",
     "@types/supertest": "^2.0.12",
     "@typescript-eslint/eslint-plugin": "^5.59.11",
+    "@typescript-eslint/parser": "^5.59.11",
     "eslint": "^8.42.0",
-    "eslint-config-standard-with-typescript": "^35.0.0",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-n": "^15.7.0",
-    "eslint-plugin-promise": "^6.1.1",
     "jest": "^29.5.0",
     "nodemon": "^2.0.22",
     "pino-pretty": "^10.0.0",

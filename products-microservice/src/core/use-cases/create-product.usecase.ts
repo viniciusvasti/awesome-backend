@@ -1,18 +1,27 @@
-import { randomUUID } from "crypto";
-import Product from "../entities/Product.ts";
-import ProductRepository from "../ports/ProductRepository.port.ts";
+import { randomUUID } from 'crypto';
+import Product from '../entities/Product.ts';
+import ProductRepository from '../ports/ProductRepository.port.ts';
 
 export class NewProduct {
-  constructor(
-    public sku: string,
-    public name: string,
-    public price: number,
-    public description?: string
-  ) {}
+  public sku: string;
+  public name: string;
+  public price: number;
+  public description?: string;
+
+  constructor(sku: string, name: string, price: number, description?: string) {
+    this.sku = sku;
+    this.name = name;
+    this.price = price;
+    this.description = description;
+  }
 }
 
 export default class CreateProductUseCase {
-  constructor(private productRepository: ProductRepository) {}
+  private readonly productRepository: ProductRepository;
+
+  constructor(productRepository: ProductRepository) {
+    this.productRepository = productRepository;
+  }
 
   async execute(newProduct: NewProduct): Promise<Product> {
     const product = new Product(

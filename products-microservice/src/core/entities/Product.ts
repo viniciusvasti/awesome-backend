@@ -1,5 +1,5 @@
-import { UUID } from "crypto";
-import Joi from "joi";
+import { UUID } from 'crypto';
+import Joi from 'joi';
 
 const ProductSchema = Joi.object({
   id: Joi.string().uuid().required(),
